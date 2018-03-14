@@ -1,5 +1,6 @@
 /* VSCode Recommended Editor by Fbook */
 /* "editor.formatOnSave": true */
+/* $ code ll-03-13-18 */
 Js.log("Hello, BuckleScript and Reason!");
 
 /* SECTION 1: START */
@@ -152,3 +153,19 @@ switch (possiblyNullValue2) {
 | None => print_endline("Nothing to see here.")
 | Some(message) => print_endline(message)
 };
+
+/* SECTION 7: END */
+/* SECTION 8: START */
+Js.log("this is reason");
+
+%bs.raw
+{|
+console.log('here is some javascript for you');
+|};
+
+Js.log("this is reason");
+
+let x = [%bs.raw {| 'here is a string from javascript' |}];
+
+Js.log(x ++ " back in reason land"); /* ++ is the operator for string concat */
+/* SECTION *: END */
