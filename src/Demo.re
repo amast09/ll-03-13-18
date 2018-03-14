@@ -169,3 +169,4 @@ let x = [%bs.raw {| 'here is a string from javascript' |}];
 
 Js.log(x ++ " back in reason land"); /* ++ is the operator for string concat */
 /* SECTION *: END */
+/* Look at Generated js output */
